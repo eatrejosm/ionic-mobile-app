@@ -9,7 +9,7 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, list, alarm } from 'ionicons/icons';
 import Products from './pages/Products';
 import Promotions from './pages/Promotions';
 import Tab3 from './pages/Tab3';
@@ -57,11 +57,11 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="Products" href="/Products">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={list} />
             <IonLabel>Prodcuts</IonLabel>
           </IonTabButton>
           <IonTabButton tab="Promotions" href="/Promotions">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={alarm} />
             <IonLabel>Promotions</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">

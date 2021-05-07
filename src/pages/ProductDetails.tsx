@@ -1,4 +1,4 @@
-import {  IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {  IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './ProductDetails.css';
 
@@ -7,6 +7,9 @@ const ProductDetails: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+        <IonButtons slot="start">
+            <IonBackButton defaultHref="/" />
+        </IonButtons>
           <IonTitle>Product Details</IonTitle>
         </IonToolbar>
       </IonHeader>
